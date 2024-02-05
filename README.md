@@ -39,3 +39,14 @@ Error: "t2.mega" is an invalid value as instance_type (aws_instance_invalid_type
   on main.tf line 41:
   41:   instance_type          = "t2.mega"
 ```
+
+TFLint also provides a [setup GH Action](https://github.com/terraform-linters/setup-tflint).
+See [tflint.yml](.github/workflows/tflint.yml).
+
+## TODO: OPA policies with Styra
+
+A [Terraform Tutorial](https://developer.hashicorp.com/terraform/tutorials/automation/validation-enforcement)
+explains how to enfore
+[OPA policies](https://www.openpolicyagent.org/docs/latest/policy-language/)
+in your Terraform files using
+[Styra](https://signup.styra.com/).
