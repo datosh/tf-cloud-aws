@@ -58,6 +58,13 @@ See [tflint.yml](.github/workflows/tflint.yml).
 
 [tfsec](https://aquasecurity.github.io/tfsec/latest/) is a static analysis security scanner for your Terraform code.
 
+False positives can be ignored using [inline annotations](https://aquasecurity.github.io/tfsec/latest/guides/configuration/ignores/)
+or a [config file](https://aquasecurity.github.io/tfsec/latest/guides/configuration/config/).
+
+tfsec provides guidance to [integrate into GitHub actions](https://aquasecurity.github.io/tfsec/latest/guides/github-actions/github-action/) using SARIF files.
+
+[GitHub Code Scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning) has to be [enabled for the repository](https://github.com/datosh/tf-cloud-aws/security/code-scanning).
+
 Aqua encourages users to [migrate to Trivy](https://aquasecurity.github.io/tfsec/latest/guides/trivy/).
 
 ## TODO: OPA policies with Styra
