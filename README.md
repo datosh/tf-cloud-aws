@@ -58,8 +58,6 @@ See [tflint.yml](.github/workflows/tflint.yml).
 
 [tfsec](https://aquasecurity.github.io/tfsec/latest/) is a static analysis security scanner for your Terraform code.
 
-
-
 Aqua encourages users to [migrate to Trivy](https://aquasecurity.github.io/tfsec/latest/guides/trivy/).
 
 ## TODO: OPA policies with Styra
