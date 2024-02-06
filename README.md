@@ -14,6 +14,13 @@ configuration according our environment.
 
 ## Auth GitHub <-> Terraform Cloud
 
+GitHub and Terraform Cloud may be connected [through different configurations](https://developer.hashicorp.com/terraform/tutorials/cloud/github-oauth):
+* [per-GitHub-organization](https://developer.hashicorp.com/terraform/cloud-docs/vcs/github)
+* [per Repository](https://developer.hashicorp.com/terraform/cloud-docs/vcs/github-app)
+
+In any case, the connection is [owned by a single user and their token](https://github.com/hashicorp/terraform-provider-tfe/issues/96#issuecomment-1237220872).
+Also [documented in Terraform docs (Step 2)](https://developer.hashicorp.com/terraform/cloud-docs/vcs/github)
+
 ## tfswitch
 
 [The tfswitch command line tool lets you switch between different versions of terraform.](https://tfswitch.warrensbox.com/)
@@ -66,6 +73,14 @@ tfsec provides guidance to [integrate into GitHub actions](https://aquasecurity.
 [GitHub Code Scanning](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning) has to be [enabled for the repository](https://github.com/datosh/tf-cloud-aws/security/code-scanning).
 
 Aqua encourages users to [migrate to Trivy](https://aquasecurity.github.io/tfsec/latest/guides/trivy/).
+
+## TODO: checkov
+
+https://github.com/bridgecrewio/checkov
+
+## TODO: terrascan
+
+https://github.com/tenable/terrascan
 
 ## TODO: OPA policies with Styra
 
