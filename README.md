@@ -54,6 +54,14 @@ Error: "t2.mega" is an invalid value as instance_type (aws_instance_invalid_type
 TFLint also provides a [setup GH Action](https://github.com/terraform-linters/setup-tflint).
 See [tflint.yml](.github/workflows/tflint.yml).
 
+## tfsec
+
+[tfsec](https://aquasecurity.github.io/tfsec/latest/) is a static analysis security scanner for your Terraform code.
+
+
+
+Aqua encourages users to [migrate to Trivy](https://aquasecurity.github.io/tfsec/latest/guides/trivy/).
+
 ## TODO: OPA policies with Styra
 
 A [Terraform Tutorial](https://developer.hashicorp.com/terraform/tutorials/automation/validation-enforcement)
@@ -64,4 +72,11 @@ in your Terraform files using
 
 ## TODO: Is it possible to limit which VCS show up in TF Cloud?
 
-I can see ControlPlane & WildWest. Can I link it?
+I can see ControlPlane & WildWest when I
+[link VCS](https://app.terraform.io/app/datosh/workspaces/tf-cloud-aws/settings/version-control).
+Can I link it?
+
+## TODO: Branching strategy
+
+Currently I only commit to `main` this makes SCA in GH Action & Terraform Cloud deploy run in parallel.
+Ideally, branch runs only plan & SCA, main runs only deploy.
