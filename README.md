@@ -3,6 +3,17 @@
 Learn TF with TF Cloud on AWS, including best practices and code analysis via
 GH actions.
 
+## Auth Terraform Cloud <-> AWS
+
+Hashicorp provides a [tutorial](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration)
+to configure dynamics provider credentials for AWS when using Terraform Cloud.
+
+We have copies their [AWS example code](https://github.com/hashicorp/terraform-dynamic-credentials-setup-examples/tree/main/aws)
+to out local [oidc-bootstrap](./oidc-bootstrap/README.md) folder, and set the
+configuration according our environment.
+
+## Auth GitHub <-> Terraform Cloud
+
 ## tfswitch
 
 [The tfswitch command line tool lets you switch between different versions of terraform.](https://tfswitch.warrensbox.com/)
@@ -50,3 +61,7 @@ explains how to enfore
 [OPA policies](https://www.openpolicyagent.org/docs/latest/policy-language/)
 in your Terraform files using
 [Styra](https://signup.styra.com/).
+
+## TODO: Is it possible to limit which VCS show up in TF Cloud?
+
+I can see ControlPlane & WildWest. Can I link it?
