@@ -44,7 +44,8 @@ Make sure the AWS user has at least the following permissions:
 				"iam:ListInstanceProfilesForRole",
 				"iam:DeleteRole",
 				"iam:AttachRolePolicy",
-				"iam:CreatePolicyVersion"
+				"iam:CreatePolicyVersion",
+				"iam:DetachRolePolicy"
 			],
 			"Resource": "*"
 		}
